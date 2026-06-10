@@ -474,6 +474,48 @@ section { position: relative; }
 }
 .footer-bottom .gold { color: var(--gold); }
 
+/* ---------- LIQUID GOLD CREST (hero) ---------- */
+.gold-crest {
+  display: inline-block;
+  width: 108px;
+  height: 108px;
+  margin-bottom: 24px;
+  background-image: url('spbc-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: drop-shadow(0 4px 18px rgba(201,162,39,0.18));
+}
+@supports (mask-mode: luminance) {
+  .gold-crest {
+    background-image: linear-gradient(
+      120deg,
+      #6e5512 0%,
+      #C9A227 22%,
+      #E8C547 38%,
+      #fff3bf 50%,
+      #E8C547 62%,
+      #C9A227 78%,
+      #6e5512 100%
+    );
+    background-size: 250% 250%;
+    mask-image: url('spbc-logo.png');
+    mask-mode: luminance;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    animation: goldFlow 7s ease-in-out infinite;
+  }
+}
+@keyframes goldFlow {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gold-crest { animation: none; }
+}
+
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 860px) {
   .grid-2, .price-grid { grid-template-columns: 1fr; }

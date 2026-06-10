@@ -9,6 +9,7 @@ A complete 6-page site in the SPBC black/gold identity: **Home, Events, Membersh
 - `shop.html` — SPBC + SPVB apparel
 - `partners.html` — Sponsor pitch + sponsorship inquiry form
 - `about.html` — Story, values, how to join + JOIN form
+- `waiver.html` — Participation waiver + code of conduct + embedded Google Form for signatures (unlimited, free; responses land in the Google Sheet under stpeteballersclub@gmail.com)
 - `styles.css` — Shared design system (do not delete; every page uses it)
 - `spbc-logo.png` — Your gold crest, used in the nav, footer, and home hero (keep it in the same folder as the HTML files when you deploy)
 
@@ -24,6 +25,7 @@ There are two forms. Each needs its own Formspree endpoint.
 4. Paste them in:
    - **about.html** — find `YOUR_JOIN_FORM_ID`, replace the whole URL with your Join endpoint
    - **partners.html** — find `YOUR_SPONSOR_FORM_ID`, replace with your Sponsor endpoint
+
 5. Submit each form once yourself to confirm it arrives in the Gmail inbox (Formspree asks you to verify the first time)
 
 ---
