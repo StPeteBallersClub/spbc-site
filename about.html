@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About &amp; Join — St. Pete Ballers Club</title>
+<meta name="description" content="The story behind St. Pete Ballers Club and how to join St. Petersburg's fastest-growing beach volleyball community.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><img src="spbc-logo.png" alt="St. Pete Ballers Club crest"><span class="brand-word">SP<span class="gold">BC</span></span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="membership.html">Membership</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="partners.html">Partners</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="#join" class="nav-cta">Join</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="wrap">
+    <div class="eyebrow">Our Story</div>
+    <h1>Built On<br><span class="gold">The Sand</span></h1>
+    <p>SPBC started as informal pickup volleyball and grew into St. Pete's fastest-growing beach volleyball community — built around people first, competition second, and good energy always.</p>
+  </div>
+</header>
+
+<!-- STORY -->
+<section class="block">
+  <div class="wrap">
+    <div class="grid-2">
+      <div>
+        <div class="section-head" style="margin-bottom:20px;">
+          <span class="diamond"></span>
+          <h2>Who We Are</h2>
+          <span class="rule"></span>
+        </div>
+        <p class="lead-text">St. Pete Ballers Club is a community-first beach volleyball club with one mission: create the most welcoming, highest-energy place to play in St. Pete — for every skill level and every background.</p>
+        <p class="lead-text">We host free weekly pickup across St. Pete's best beaches, plus competitive leagues and tournaments that consistently sell out. Live DJs, officiated courts, real signage, and a culture people genuinely love.</p>
+        <p class="lead-text">We're more than volleyball. The game brings people together — the connections are what keep them here.</p>
+      </div>
+      <div>
+        <div class="section-head" style="margin-bottom:20px;">
+          <span class="diamond"></span>
+          <h2>What We Stand For</h2>
+          <span class="rule"></span>
+        </div>
+        <ul class="perks">
+          <li><strong>Inclusivity</strong> — all skill levels, all backgrounds, always welcome.</li>
+          <li><strong>Energy</strong> — music, movement, and a high-vibe environment every session.</li>
+          <li><strong>Community first</strong> — people before everything else.</li>
+          <li><strong>Competitive excellence</strong> — serious volleyball without the exclusivity.</li>
+          <li><strong>Show up for each other</strong> — on the sand and off it.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO JOIN -->
+<section class="block block-dark">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="diamond"></span>
+      <h2>How To Join</h2>
+      <span class="rule"></span>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="n">1</div>
+        <h4>Reach Out</h4>
+        <p>Fill out the form below or DM us "JOIN" on Instagram. We'll point you to the next session.</p>
+      </div>
+      <div class="step">
+        <div class="n">2</div>
+        <h4>Sign the Waiver</h4>
+        <p>Complete our quick waiver and code of conduct — it keeps everyone safe and the vibe right.</p>
+      </div>
+      <div class="step">
+        <div class="n">3</div>
+        <h4>Show Up &amp; Play</h4>
+        <p>Pull up to any free pickup session. No experience necessary — just bring your energy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOIN FORM -->
+<section class="block" id="join">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="diamond"></span>
+      <h2>Join The Club</h2>
+      <span class="rule"></span>
+    </div>
+    <div class="grid-2">
+      <div>
+        <p class="lead-text">Drop your info and we'll get you connected to the community, the schedule, and your first session. It's free to start playing — pickup always is.</p>
+        <p class="lead-text">Prefer Instagram? DM us "JOIN" at <a href="https://instagram.com/stpeteballers" target="_blank" rel="noopener" style="color:var(--gold-bright);">@stpeteballers</a>. Or email <a href="mailto:stpeteballersclub@gmail.com" style="color:var(--gold-bright);">stpeteballersclub@gmail.com</a>.</p>
+      </div>
+      <div class="form-card">
+        <!-- FORMSPREE: replace YOUR_JOIN_FORM_ID with the endpoint from your Formspree join form -->
+        <form action="https://formspree.io/f/YOUR_JOIN_FORM_ID" method="POST">
+          <input type="hidden" name="_subject" value="New SPBC Join Request">
+          <div class="field">
+            <label for="j-name">Name</label>
+            <input id="j-name" type="text" name="name" required>
+          </div>
+          <div class="field">
+            <label for="j-email">Email</label>
+            <input id="j-email" type="email" name="email" required>
+          </div>
+          <div class="field">
+            <label for="j-level">Experience Level</label>
+            <select id="j-level" name="experience_level">
+              <option>Brand new — never played</option>
+              <option>Beginner</option>
+              <option>Intermediate</option>
+              <option>Advanced / Competitive</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="j-msg">Anything you want us to know? (optional)</label>
+            <textarea id="j-msg" name="message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send Join Request</button>
+          <p class="form-note">We'll reply with how to get started and our latest schedule. Welcome to the sand.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand"><img src="spbc-logo.png" alt="St. Pete Ballers Club crest"><span class="brand-word">SP<span class="gold">BC</span></span></div>
+        <p>St. Petersburg's community-first beach volleyball club. Our City. Our Sand. Our Club.</p>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul class="footer-links">
+          <li><a href="events.html">Events</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Connect</h5>
+        <ul class="footer-links">
+          <li><a href="https://instagram.com/stpeteballers" target="_blank" rel="noopener">Instagram @stpeteballers</a></li>
+          <li><a href="mailto:stpeteballersclub@gmail.com">stpeteballersclub@gmail.com</a></li>
+          <li><a href="#join">Become a Member</a></li>
+          <li><a href="partners.html#sponsor">Sponsor SPBC</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 St. Pete Ballers Club</span>
+      <span class="gold">Our City. Our Sand. Our Club.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const t = document.getElementById('navToggle');
+  const l = document.getElementById('navLinks');
+  if (t) t.addEventListener('click', () => l.classList.toggle('open'));
+</script>
+</body>
+</html>
